@@ -186,9 +186,9 @@ public:
 
 
 
-		void firstReading() {
+		void firstReading(string x) {
 			ifstream inFile;
-			inFile.open("RadixSort_Data.txt");
+			inFile.open(x);
 			if (!inFile) {
 				cerr << "Unable to open File to read";
 				exit(1);
@@ -308,7 +308,7 @@ public:
 		outF.close();
 	
 		radixSort rs;
-		rs.firstReading();
+		rs.firstReading("RadixSort_Data.txt");
 		linkedListStack lls;
 
 		lls = rs.loadStack("RadixSort_Data.txt", lls);

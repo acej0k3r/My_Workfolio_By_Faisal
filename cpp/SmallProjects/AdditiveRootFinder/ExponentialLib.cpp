@@ -156,9 +156,10 @@ int main() {
 		}
 	}
 
-	cout << "The additive root of the integer you entered";
-	cout << orig << "is: " << addRoot << endl;
+	cout << "The additive root of the integer you entered ";
+	cout << orig << " is : " << addRoot << endl;
 	cout << "It has an additive persistence of " << addPers << endl;
+
 
 
 
