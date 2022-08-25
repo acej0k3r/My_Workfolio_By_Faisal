@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Student Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <h1 id="tt"> test</h1>
+    
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-6">
+				<img src="images/Queens%20college%20logo.png" id="logo">
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-6" id="logoRightSide">
+				<h2>THE UNDERGRADUATE<br>
+                    SCHOLASTIC STANDARDS COMMITTEE (USSC)<br>
+                    65-30 KISSENA BLVD. FRESE HALL -ROOM 2010<br>
+                    FLUSHING, NY 11367<br>
+                    TELEPHONE:(718) 997-4486<br>
+                    EMAIL: QC_USSC@QC.CUNY.EDU<br>
+                    <a href="https://myqc.qc.cuny.edu/StudentLife/USSC/default.aspx">https://myqc.qc.cuny.edu/StudentLife/USSC/default.aspx</a>
+                </h2>
+                
+            </div>
+            
+        </div>
+    </div>
+				
+            <form class ="form" id="studentForm" action="https://venus.cs.qc.cuny.edu/~famd7995/withdrawlProject/connection.php" method="POST">
+                <div class="container-fluid" id="border">
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            <h2 class="headline"><br> APPEAL FOR A RETROACTIVE WITHDRAWAL FROM PRIOR SEMESTER COURSES(S)<br><br></h2>
+                        
+                        </div>
+                        
+                        <!-- Date and ID -->
+                        <div class="col-6">
+                        <label for="dateUSSC" class="" >Date submitted to USSC:</label>
+							<input type="date" class="form-control reqInput" id="dateUSSC" placeholder="MM/DD/YYYY" name="date">
+                        </div>
+                        
+                        <div class="col-6">
+                            <label for="cunyId" >CUNYFirst ID #:</label>
+							<input type="" class="form-control reqInput" id="cunyId" placeholder="8 digits" maxlength="8" minlength="8" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="id">
+                        </div>
+                        
+                        
+                        
+                        
+                        <!-- Name -->
+                       
+                        <div class="col-5">
+                            <label for="lName" >Last:</label>
+							<input type="" class="form-control reqInput" id="lName" placeholder="Last Name" name="lName">
+                        </div>
+                        
+                        <div class="col-5">
+                            <label for="fName">First Name:</label>
+							<input type="" class="form-control reqInput" id="fName" placeholder="First Name" name="fName">
+                        </div>
+                        
+                        
+                        <div class="col-2">
+                            <label for="mInitial">Middle initial:</label>
+							<input type="" class="form-control" id="mInitial" placeholder="MI." name="mName">
+                        </div>
+                        
+    
+                        
+                        
+                        <!--Mailing Address and 365 email -->
+                            
+                        <div class="col-12">
+                            <label for="mailing" >Mailing Address:</label>
+							<input type="" class="form-control reqInput" id="mailing" placeholder="Street address, city, state, zip" name="address">
+                        </div>
+                        
+                        <div class="col-12">
+                            <label for="365" >Queens College Office 365 Email Address:</label>
+							<input type="email" class="form-control reqInput" id="365" placeholder="johndoe@qc.cuny.edu" name="email">
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                       <!-- Telephone Number -->
+                        
+                    <div class="col-6">
+                            <label for="homeNum" >Home Tel#</label>
+							<input type="" class="form-control reqInput" id="homeNum" placeholder="10 digits" maxlength="10" minlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="homePhoneNum">
+                    </div>
+                        
+                    <div class="col-6">
+                            <label for="cellNum" >Cell Phone#:</label>
+							<input type="" class="form-control reqInput" id="cellNum" placeholder="10 digits" maxlength="10" minlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="cellPhoneNum">
+                    </div>
+                        
+                        
+                        
+                        
+                        
+                    <div class="row">
+                        <hr class="col-12">
+                        
+                        <p class="col-12">As per Academic Senate policy, retroactive withdrawals, which are withdrawals requested after the semester has been completed, shall be handled in essentially the same manner as late withdrawals. Such withdrawals shall require documentation and verification of the extenuating circumstances that prevented the student from completing the course(s) AND from withdrawing during the appropriate time limits during the semester in question. <br><br>
+                            
+                        Retroactive course withdrawals may not be considered for courses in which the student has received an earned grade of A+ to F since it is not in the USSC’s jurisdiction to change an instructor’s assigned grade. If a student wishes to appeal their grade directly to a member of the faculty, they shall have a one year period from the date the grade was entered on their record to make such appeal. Please note that instructors may not assign late or retroactive withdrawals; only the USSC is empowered to do so. <br><br>
+                            
+                        Bring or mail your appeal packet for a retroactive withdrawal to the USSC. An appeal packet includes: this completed appeal form, a typed/labeled appeal statement, semester-specific supporting documentation and a completed Course Withdrawal Evaluation Form from each instructor you are requesting a retroactive withdrawal. Partial appeals will be returned. (Faxed, scanned, or emailed appeals are not accepted.) <br> <br>
+                            
+                        If you wish to submit an appeal for a retroactive withdrawal from prior semester course(s) in different semesters, you must submit an appeal packet for each separate semester. <br><br>
+                            
+                        The USSC will inform you of their decision by email which will be sent to your Queens College Office 365 Email ONLY. Decisions are usually emailed within 14-21 business days after the receipt of your completed appeal. Please be sure to claim your Office 365 Email account at <b>http://www.qc.cuny.edu/Computing/Pages/Office365.aspx</b> if you have not already done so. <br><br>
+                            
+                            
+                        The approval of an appeal for a retroactive withdrawal does not remove financial liability associated with the course(s). Financial issues should be addressed to the Bursar’s Office and/or the Financial Aid Office.</p>
+                        
+                        
+                        <hr class="col-12">
+                    </div>
+                        
+                    <div class="row usscOnlyUse justify-content-center">
+                      
+                        <h2 class ="col-12"><b>USSC USE ONLY: </b></h2>
+                        
+                        <div class="col-2">
+                        <label for="approved" >Approved:</label>
+							<input type="" class="form-control ussc" id="approved" placeholder="">
+                        </div>
+                        
+                        <div class="col-2">
+                        <label for="denied" >Denied:</label>
+							<input type="" class="form-control ussc" id="denied" placeholder="">
+                        </div>
+                        
+                        <div class="col-4">
+                        <label for="approved" >Date:</label>
+							<input type="" class="form-control ussc" id="approved" placeholder="">
+                        </div>
+                        
+                        <div class="col-4">
+                        <label for="emailSent" >Email Sent:</label>
+							<input type="" class="form-control ussc" id="emailSent" placeholder="">
+                        </div>
+                        
+                            
+                    </div>
+                        
+                        
+                        
+    
+	
+                        
+                     
+                    
+                    
+                </div> <!--DIV ROW-->
+                
+            </div> <!--DIV container-fluid-->
+             
+        
+                
+	
+        
+        
+        <!-- Row Two start -->
+        
+        <div class="row" id="border">
+                <div class="col-12">
+                    <h2 class="headline"><br>INSTRUCTIONS TO APPEAL FOR A RETROACTIVE WITHDRAWAL FROM PRIOR SEMESTER COURSES<br><br></h2>
+                
+                </div>
+                
+                
+                
+                
+               
+                <p>1. Indicate the course(s) you are requesting consideration for a retroactive withdrawal. <br></p>
+                    
+                    
+                    
+	
+            <form id="getInputForm" action="" method="post"> 
+
+                <div class="col-12 col-md-12 section py-3 schedule">
+                    <table id="Schedule">
+                        <tr>
+                            <th>Select</th>
+                            <th>Class</th>
+                            <th>Description</th>
+                            <th>Days/Times</th>
+                            <th>Room</th>
+                            <th>Instructor</th>
+                            <th>Units</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="select" name="select"></td>
+                            <td class="className"></td>
+                            <td class="descriptions"></td>
+                            <td class="daysAndTimes"></td>
+                            <td class="meetingRooms"></td>
+                            <td class="instructor"></td>
+                            <td class="units"></td>
+                            <td class="status"></td>
+                        </tr>
+                    </table>	
+                </div>
+            
+            </form>
+
+                <br><br><br>
+            <div class="container-fluid">
+                <div class="row">        
+
+                    <div class="col-3" id="col1">
+
+
+                        <h1><u>Course and number</u></h1>
+
+
+
+                        <input type="" class="form-control" placeholder="" disabled = "disabled" name="course0">
+          
+                    
+                    
+                 
+                         <input type="" class="form-control" placeholder="" disabled = "disabled" name="course1">
+             
+                    
+                    
+                         <input type="" class="form-control" placeholder="" disabled = "disabled" name="course2">
+                 
+                     
+                     
+                             
+                         <input type="" class="form-control" placeholder="" disabled = "disabled" name="course4">
+                 
+                     
+                     
+                         <input type="" class="form-control" placeholder="" disabled = "disabled" name="course5">    
+      
+                 
+                </div>    
+                    
+                    
+                    
+                    
+                <div class="col-2" id="col2">
+                   
+               
+                        <h1><u>Course Code</u></h1>
+   
+                     
+                     
+            
+                        <input type="" class="form-control" placeholder="" disabled = "disabled" name="code0">
+            
+                        <input type="" class="form-control" placeholder="" disabled = "disabled" name="code1">
+                    
+                 
+                         <input type="" class="form-control" placeholder="" disabled = "disabled" name="code2">
+                
+                         <input type="" class="form-control" placeholder="" disabled =   "disabled" name="code3">
+                        
+                         <input type="" class="form-control" placeholder="" disabled =  "disabled" name="code4">
+                </div>    
+                    
+                
+                    
+                    
+                <div class="col-2" id="col3">
+                   
+          
+                        <h1><u>Semester and Year</u></h1>
+                 
+                     
+              
+                    <input type="" class="form-control" placeholder="" disabled = "disabled" value="" name="year0">
+                  
+                    <input type="" class="form-control" placeholder="" disabled = "disabled" value="" name="year1">
+                
+                    <input type="" class="form-control" placeholder="" disabled = "disabled" value="" name="year2">
+                    
+                    <input type="" class="form-control" placeholder="" disabled = "disabled" value="" name="year3">
+                    
+                    <input type="" class="form-control" placeholder="" disabled = "disabled" value="" name="year4">
+                
+                     
+                </div>    
+                    
+                    
+                    
+                    
+                <div class="col-3" id="col4">
+                   
+               
+                        <h1><u>Instructor's Name</u></h1>
+   
+     
+                         <input type="" class="form-control" placeholder="" disabled = "disabled" name="instructor0">
+                    
+                        <input type="" class="form-control" placeholder="" disabled = "disabled" name="instructor1">
+                    
+                        <input type="" class="form-control" placeholder="" disabled = "disabled" name="instructor2">
+                    
+                        <input type="" class="form-control" placeholder="" disabled = "disabled" name="instructor3">
+                    
+                        <input type="" class="form-control" placeholder="" disabled = "disabled" name="instructor4">
+          
+                        
+                        
+                
+                     
+                </div>    
+                    
+                
+                
+                  <div class="col-2" id="col5">
+                   
+             
+                        <h1><u>Grade Rec'd</u></h1>
+                    
+                     
+                        <div class="col-10">
+                          <input type="" class="form-control" placeholder="" disabled = "disabled" name="grade0"> 
+                        
+                          <input type="" class="form-control" placeholder="" disabled = "disabled" name="grade1"> 
+                            
+                          <input type="" class="form-control" placeholder="" disabled = "disabled" name="grade2">
+                            
+                          <input type="" class="form-control" placeholder="" disabled = "disabled" name="grade3"> 
+                            
+                          <input type="" class="form-control" placeholder="" disabled = "disabled" name="grade4">
+          
+                    
+                    
+
+                
+                        </div>
+                    </div>    
+                        
+                </div>    
+                    
+         </div>           
+                    
+                    
+    <div class="row">
+                    
+            <div class="col-12">
+                    
+            <div class="col-12">
+                   <p><br><br><br><br>
+                    2. You must submit a typed appeal statement with responses to the following questions. Your responses must be labeled as A, (and if applicable, A1 and A2), B and C. Appeal statements not typed or labeled will be returned.<br><br> 
+               
+                       
+                       
+                <div class="col-12">
+                    <div class="col-12">
+                        A. <u>Did you receive a WU or Z grade(s)?</u> (If your answer is “yes”, you must respond to the questions below.)<br><br> 
+                               
+                    </div> 
+                       <div class="col-12">
+                    1. What are the extenuating circumstances that prevented you from completing the course(s)? <br>
+                               
+
+                        <input class="textbox col-8 offset-1" type="textarea" id="questionA1" placeholder="If 'YES' answer here for A1">
+                       <br>
+                       </div>
+                       
+                       <div class="col-12">
+                   2. Why did you not withdraw from the course(s) by the published withdrawal deadline date?<br>
+                        <input class="textbox col-8 offset-1" type="textarea" id="questionA2" placeholder="If 'YES' answer here for A2"><br><br>
+                           
+                       </div>
+                   
+                       
+                   
+                    B. <u>Did you receive an INC/FIN, ABS/FAB, or PEN/FPN grade(s)?</u> (If your answer is “yes”, you must respond to the question below. <br><br>
+                     <div class="col-12">      
+                    What are the extenuating circumstances that prevented you from completing the outstanding course requirements by the end of the semester immediately following the semester in which you received the temporary grade(s)?<br>
+                                 <input class="textbox col-8 offset-1" type="textarea" id="questionB" placeholder="If 'YES' answer here for B"><br><br>
+                       
+                      </div>
+                </div>
+                    
+            </div> 
+                       
+            <div class="col-12">
+                    The reason(s) given in your responses above must be supported with official, semester-specific, dated documentation that is not returnable, but will be held in strict confidence. (The USSC may accept as documentation, third party notarized verification of the events only when official documentation may not be possible.) Failure to submit documentation may result in the denial of this appeal. All documentation is kept confidential, however, be aware that any documentation submitted to the USSC is subject to verification at the USSC’s discretion. If falsified documentation is submitted, you will be referred to the Office of the Vice President of Student Affairs for disciplinary action. Be sure to retain a copy of all documentation submitted with your appeal for your records since the USSC will not furnish any copies in the future.<br><br><br>
+                    
+                    
+                <div class="col-12">       
+                   C. Were you registered for other courses in the same semester as the course(s) that you are requesting a retroactive withdrawal? (If your answer is “yes”, you must respond to the question below.)<br><br>
+                                
+                   How did the extenuating circumstances, which you indicated in A and/or B above, not affect the other course(s)?<br>
+                        <input class="textbox col-8 offset-1" type="textarea" id="questionC" placeholder="If 'YES' answer here for C"><br><br>
+                        
+                </div> 
+            </div>      
+                       
+            <div class="col-12">
+                    4. Have your instructor complete their portion of the Course Withdrawal Evaluation Form. You must submit one Course Withdrawal Evaluation Form for each course that you are requesting consideration for a retroactive withdrawal. If the USSC approves your appeal for a retroactive withdrawal and your instructor indicated your performance as numbers 1 or 3 on the Course Withdrawal Evaluation Form, a W grade (withdrawal, passing) will be assigned. The W grade does not calculate in your GPA. If number 2 is indicated, a WF (withdrawal, failing) grade will be assigned. The WF grade calculates as a failure in your GPA.<br><br>
+                            
+                    <b><u>Financial Aid Recipients</u></b>: It is your responsibility to speak with your financial aid advisor BEFORE submitting your appeal for a retroactive withdrawal. If your appeal is approved, you may be financially liable if you received financial aid for the course(s) in question. In addition, it may also affect future financial aid liability.<br> 
+                            
+                    I have read and understand the information and instructions to appeal for a retroactive withdrawal from prior semester course(s):<br><br>   
+            </div>     
+                       
+                    
+        </div> 
+                                        
+    </div>                       
+                    
+
+    <div class="container-fluid">            
+            <div class="row justify-content-center">   
+                    <div class="col-6">
+                            <label for="studentSign" >Student Signature</label>
+							<input type="" class="form-control reqInput" id="studentSign" placeholder="Signature">
+                    </div>
+                        
+                    
+                    <div class="col-6">
+                            <label for="dateSubmitted" >Date Submitted#:</label>
+							<input type="date" class="form-control reqInput" id="dateSubmitted" placeholder="MM/DD/YYYY">
+                    </div>
+             </div>     
+                
+       </div>               
+                    
+    <div class="container-fluid">         
+                    <div class="row">
+                        <div class="col-12"><br><br></div>
+                    </div>              
+    </div>     
+                    
+    <div class="container-fluid">
+        <div class="row justify-content-center" id="pagebottom">
+        <button type="button" class="btn logOutButton col-2" id="logout">Log out</button>
+        <button role="button" type="submit" class="btn col-2 offset-3" id="submitBtn">Submit Form</button>      
+        </div>
+		
+	</div>
+	
+	            
+                    
+                            
+               
+            
+        
+        </div> <!--DIV ROW SECOND HALF-->
+     
+    </form>  <!--FORM-->     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="studentFormScript.js"></script>
+    
+    
+    </body>
+</html>

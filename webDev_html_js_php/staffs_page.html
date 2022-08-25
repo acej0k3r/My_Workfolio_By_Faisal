@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="staffs_page.css">
+	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400' rel='stylesheet' type='text/css'>
+
+<title> Staffs Page </title>
+	
+
+</head>
+<body>
+
+	<div class=" container-fluid">
+		<div class="row">
+			<div class="col-sm-12 col-md-5 ">
+			<img src ="https://github.com/lime1209/355-team-project-group-4/blob/master/images/Queens%20college%20logo.png?raw=true" alt= "Logo">
+			</div>
+			
+			<div class= "col-sm-12 col-md-5 section py-5">
+				<h2>THE UNDERGRADUATE SCHOLASTIC STANDARDS COMMITTEE (USSC)</h2>
+				<h5>APPEAL FOR A RETROACTIVE WITHDRAWAL FROM PRIOR SEMESTER COURSE(S)</h5>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+		
+		<table class="table table-striped"> 
+			<thead>
+				<tr>
+					<th> CUNYFirst ID </th>
+					<th> Name </th>
+					<th> Date Submitted</th>
+					<th> Status </th>
+					<th> Withdrawal Form </th>
+				
+				</tr>
+			</thead>
+			<tbody>
+			<tr> 
+				<td>123456 </td>
+				<td> John Doe</td>
+				<td> May 3</td>
+				<td> TBD </td>
+				<td> <a href = "https://github.com/lime1209/355-team-project-group-4/blob/master/StudentsPage/StudentPage.html"> FORM   </a> </td>
+				
+			</tr>
+			
+			<?php 
+			$conn = mySqli_connect("localhost", "root", "", 
+			
+			?>
+			</tbody>
+			
+		</table> 
+		<h3> Stude
+		<h3> Students Withdrawal Form: </h3>
+		
+		<div class="row">
+			<div class="col">
+				<button onclick="sortList()">Sort</button>
+				<ul id = "id01">
+					<li> <a href = "https://github.com/lime1209/355-team-project-group-4/blob/master/StudentsPage/StudentPage.html " > Jonh Doe</a>    </li>
+					<li> <a href = "https://github.com/lime1209/355-team-project-group-4/blob/master/StudentsPage/StudentPage.html "> Mary doe</a> </li>
+					<li> <a href = "https://github.com/lime1209/355-team-project-group-4/blob/master/StudentsPage/StudentPage.html " >Pema Lama </a> </li>
+					<li> <a href = "https://github.com/lime1209/355-team-project-group-4/blob/master/StudentsPage/StudentPage.html "> Jack Harris</a> </li>
+					<li> <a href = "https://github.com/lime1209/355-team-project-group-4/blob/master/StudentsPage/StudentPage.html "> Rock Lee</a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+				
+	<script>
+		
+	function sortList(){
+	var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+	
+	
+	}
+	</script>
+
+	<div class="action">
+		<button type="button" class="btn logOutButton" id="logout">Log out</button>
+	</div>
+</body>
+</html>
