@@ -1,0 +1,1 @@
+The following application was coded with react to build a modernized web platform that supports dispalying movie information through the usage of REST api mehtods with the incorporation of REACT, JS, Node.JS. 
